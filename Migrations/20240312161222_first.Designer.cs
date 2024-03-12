@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace GestaoDeLaboratorios.Migrations
 {
-    [DbContext(typeof(LabContexto))]
-    [Migration("20240311183809_first")]
+    [DbContext(typeof(InfnetContexto))]
+    [Migration("20240312161222_first")]
     partial class first
     {
         /// <inheritdoc />
@@ -35,6 +35,7 @@ namespace GestaoDeLaboratorios.Migrations
 
                     b.Property<string>("Marca")
                         .IsRequired()
+                        .HasMaxLength(50)
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Memoria")

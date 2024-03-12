@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace GestaoDeLaboratorios.Migrations
 {
-    [DbContext(typeof(LabContexto))]
-    partial class LabContextoModelSnapshot : ModelSnapshot
+    [DbContext(typeof(InfnetContexto))]
+    partial class InfnetContextoModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
         {
@@ -32,6 +32,7 @@ namespace GestaoDeLaboratorios.Migrations
 
                     b.Property<string>("Marca")
                         .IsRequired()
+                        .HasMaxLength(50)
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Memoria")

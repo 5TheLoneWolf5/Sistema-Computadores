@@ -17,7 +17,7 @@ namespace GestaoDeLaboratorios.Migrations
                 {
                     Id = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
-                    Marca = table.Column<string>(type: "TEXT", nullable: false),
+                    Marca = table.Column<string>(type: "TEXT", maxLength: 50, nullable: false),
                     Processador = table.Column<string>(type: "TEXT", nullable: false),
                     PlacaMae = table.Column<string>(type: "TEXT", nullable: false),
                     Memoria = table.Column<string>(type: "TEXT", nullable: false),

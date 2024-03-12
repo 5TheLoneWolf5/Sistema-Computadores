@@ -12,9 +12,9 @@ namespace GestaoDeLaboratorios.Controllers
 {
     public class ComputadoresController : Controller
     {
-        private readonly LabContexto _context;
+        private readonly InfnetContexto _context;
 
-        public ComputadoresController(LabContexto context)
+        public ComputadoresController(InfnetContexto context)
         {
             _context = context;
         }

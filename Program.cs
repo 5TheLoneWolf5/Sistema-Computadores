@@ -12,8 +12,8 @@ namespace GestaoDeLaboratorios
             // Add services to the container.
             builder.Services.AddControllersWithViews();
 
-            builder.Services.AddDbContext<LabContexto>(options => {
-                options.UseSqlite(builder.Configuration.GetConnectionString("LabContexto"));
+            builder.Services.AddDbContext<InfnetContexto>(options => {
+                options.UseSqlite(builder.Configuration.GetConnectionString("InfnetContexto"));
             });
 
             var app = builder.Build();
