@@ -35,7 +35,7 @@ namespace GestaoDeLaboratorios
 
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=Home}/{action=Index}/{id?}");
+                pattern: "{controller=Computadores}/{action=Index}/{id?}");
 
             app.Run();
         }
